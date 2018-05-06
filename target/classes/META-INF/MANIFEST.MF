@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Implementation-Title: ws_masterdata_team
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: User
+Implementation-Vendor-Id: com.spark.masterdata.team
+Build-Jdk: 1.8.0_161
+Implementation-URL: http://projects.spring.io/spring-boot/ws_masterdat
+ a_team/
+Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
+
