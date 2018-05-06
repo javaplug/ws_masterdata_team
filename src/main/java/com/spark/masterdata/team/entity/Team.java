@@ -8,10 +8,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-import lombok.Data;
-
 @Entity
-@Data
 @Table(name = "team")
 public class Team implements Serializable {
 
@@ -25,4 +22,30 @@ public class Team implements Serializable {
 
 	@Column(name = "current_project")
 	private String currentProject;
+
+	public Integer getId() {
+		return id;
+	}
+
+	public void setId(Integer id) {
+		this.id = id;
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+	public String getCurrentProject() {
+		return currentProject;
+	}
+
+	public void setCurrentProject(String currentProject) {
+		this.currentProject = currentProject;
+	}
+	
+	
 }
