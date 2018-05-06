@@ -1,0 +1,5 @@
+com\spark\masterdata\team\entity\Team.class
+com\spark\masterdata\team\MasterdataTeamApplication.class
+com\spark\masterdata\team\dto\TeamDTO.class
+com\spark\masterdata\team\repository\TeamRepository.class
+com\spark\masterdata\team\controller\TeamController.class
