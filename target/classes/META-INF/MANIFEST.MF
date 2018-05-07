@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Implementation-Title: ws_masterdata_team
+Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: jcnt573
+Implementation-Vendor-Id: com.spark.masterdata.team
+Build-Jdk: 1.8.0_151
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/ws_masterdata_team
+Created-By: Maven Integration for Eclipse
+
