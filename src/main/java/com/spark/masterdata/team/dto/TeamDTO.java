@@ -1,33 +1,26 @@
 package com.spark.masterdata.team.dto;
 
+import lombok.Data;
+
+@Data
 public class TeamDTO {
 
-	private Integer id;
-	private String name;
-	private String currentProject;
+    private String teamId;
 
-	public Integer getId() {
-		return id;
-	}
+    private String teamName;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    private String leadId;
 
-	public String getName() {
-		return name;
-	}
+    private String location;
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    private String projectId;
 
-	public String getCurrentProject() {
-		return currentProject;
-	}
+    private String duration;
 
-	public void setCurrentProject(String currentProject) {
-		this.currentProject = currentProject;
-	}
+    private String startDate;
+
+    private String status;
+
+    private String creditPoints;
 
 }

@@ -1,51 +1,59 @@
 package com.spark.masterdata.team.entity;
 
 import java.io.Serializable;
+import java.time.OffsetDateTime;
+import java.util.HashSet;
+import java.util.Set;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import lombok.Data;
 
 @Entity
 @Table(name = "team")
+@Data
 public class Team implements Serializable {
 
-	private static final long serialVersionUID = 7989759922324043788L;
+    private static final long serialVersionUID = 7989759922324043788L;
 
-	@Id
-	@GeneratedValue
-	private Integer id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
+    @Column(name = "TEAM_ID")
+    private Integer teamId;
 
-	private String name;
+    @Column(name = "TEAM_NAME")
+    private String teamName;
 
-	@Column(name = "current_project")
-	private String currentProject;
+    @Column(name = "LEAD_ID")
+    private Integer leadId;
 
-	public Integer getId() {
-		return id;
-	}
+    @Column(name = "LOCATION")
+    private String location;
 
-	public void setId(Integer id) {
-		this.id = id;
-	}
+    @Column(name = "PROJECT_ID")
+    private String projectId;
 
-	public String getName() {
-		return name;
-	}
+    @Column(name = "DURATION")
+    private Integer duration;
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    @Column(name = "START_DATE")
+    private OffsetDateTime startDate;
 
-	public String getCurrentProject() {
-		return currentProject;
-	}
+    @Column(name = "STATUS")
+    private String status;
 
-	public void setCurrentProject(String currentProject) {
-		this.currentProject = currentProject;
-	}
-	
-	
+    @Column(name = "CREDIT_POINTS")
+    private Integer creditPoints;
+
+    @OneToMany(fetch = FetchType.LAZY, mappedBy = "team", cascade = CascadeType.ALL, orphanRemoval = true)
+    private Set<TeamMember> teamMembers = new HashSet<>();
+
 }
