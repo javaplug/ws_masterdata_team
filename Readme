@@ -1,0 +1,39 @@
+Create team:  POST
+-----------------------------------------------------------------
+http://localhost:8080/team/add
+{
+	"teamId" : null,
+	"teamName" : "CSK",
+	"leadId" : "1",
+	"location" : "Chennai",
+	"projectId" : "CSKphase1",
+	"duration" : "5",
+	"startDate" : "2018-05-19T16:38:45.494+05:30",
+	"status" : "Active",
+	"creditPoints" : "2"
+}
+Read : GET
+-----------------------------------------------------------------
+all teams
+http://localhost:8080/team/getAll
+get a team
+http://localhost:8080/team/get/1
+
+Update team: PUT
+-----------------------------------------------------------------
+http://localhost:8080/team/update
+{
+	"teamId" : 1,
+	"teamName" : "CSK",
+	"leadId" : "1",
+	"location" : "Coimbatore",
+	"projectId" : "CSKphase1",
+	"duration" : "5",
+	"startDate" : "2018-05-19T16:38:45.494+05:30",
+	"status" : "Active",
+	"creditPoints" : "2"
+}
+
+Delete team: DELETE
+-----------------------------------------------------------------
+http://localhost:8080/team/delete/1
