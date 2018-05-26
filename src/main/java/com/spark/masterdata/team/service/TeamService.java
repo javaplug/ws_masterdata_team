@@ -33,17 +33,21 @@ public class TeamService {
     }
 
     @Transactional
-    public Team saveTeam(TeamDTO teamDTO) {
+    public String saveTeam(TeamDTO teamDTO) {
         Team team;
+        String message;
         if (NumberUtils.isCreatable(teamDTO.getTeamId())) {
             team = teamRepository.findById(NumberUtils.createInteger(teamDTO.getTeamId()))
                                  .orElse(new Team());
+            message = "Team is successfully Updated";
         } else {
             team = new Team();
+            message = "Team is successfully Created";
         }
 
         teamServiceHelper.marshallTeamDTO(teamDTO, team);
-        return teamRepository.save(team);
+        teamRepository.save(team);
+        return message;
     }
 
     @Transactional
