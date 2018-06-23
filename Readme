@@ -3,7 +3,7 @@ Spring Boot
 opinionated     - comes with a lot of non-functional features, quick development
 configuration   - can be overriden any of the opinionated features
 Embedded-server - gives stand-alone jar/war with embedded Tomcat server
-
+--------------------------------------------------------------------------------------------------------------------------------------
 
 Getting Started
 ===============
@@ -65,3 +65,5 @@ Importing Maven Project and starting
   - in browser open 'http://localhost:8080/h2-console' and give input as per 'tutorials/h2console.PNG' and click 'connect'
   - this is a console of embedded db configured in the ws_masterdata_team
   - sample usage refer 'tutorials/output.PNG'
+
+<End of Environment setup>
