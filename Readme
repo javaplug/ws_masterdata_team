@@ -1,39 +1,36 @@
-Create team:  POST
------------------------------------------------------------------
-http://localhost:8080/team/add
-{
-	"teamId" : null,
-	"teamName" : "CSK",
-	"leadId" : "1",
-	"location" : "Chennai",
-	"projectId" : "CSKphase1",
-	"duration" : "5",
-	"startDate" : "2018-05-19T16:38:45.494+05:30",
-	"status" : "Active",
-	"creditPoints" : "2"
-}
-Read : GET
------------------------------------------------------------------
-all teams
-http://localhost:8080/team/getAll
-get a team
-http://localhost:8080/team/get/1
+Spring Boot
+===========
+opinionated     - comes with a lot of non-functional features, quick development
+configuration   - can be overriden any of the opinionated features
+Embedded-server - gives stand-alone jar/war with embedded Tomcat server
 
-Update team: PUT
------------------------------------------------------------------
-http://localhost:8080/team/update
-{
-	"teamId" : 1,
-	"teamName" : "CSK",
-	"leadId" : "1",
-	"location" : "Coimbatore",
-	"projectId" : "CSKphase1",
-	"duration" : "5",
-	"startDate" : "2018-05-19T16:38:45.494+05:30",
-	"status" : "Active",
-	"creditPoints" : "2"
-}
 
-Delete team: DELETE
------------------------------------------------------------------
-http://localhost:8080/team/delete/1
+Getting Started
+===============
+Tools required
+ - Java 8 [Programming language]
+   - http://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
+   - Click 'Accept License Agreement' and Download a JDK [Java SE Development Kit 8u] which suites your OS
+   - Install
+ - Spring-tool-suite(STS) [Editor]
+   - https://spring.io/tools/sts/all
+   - Download and Install
+ - Apache Maven [Build tool]
+   - https://maven.apache.org/download.cgi
+   - Download a binary file by making sure that file name has [-bin], sample file name -> apache-maven-3.5.x-bin.zip
+   - unzip that anywhere in your PC
+ - Git [Source Control Management tool]
+   - https://git-scm.com/downloads
+
+Configuration
+=============
+ - Open STS
+ - it asks a path for creating a workspace, choose a folder your PC
+ - it opens the workspace
+ - setting maven
+   - from menu option click: Window -> Preferences -> [in left-panel]Maven : Installations -> [in right-panel] click 'Add' : click 'Directory' and choose the folder where you unziped 'Apache Maven' '~\apache-maven-3.5.3' and click : 'Finish'
+   - from menu option click: Window -> Preferences -> [in left-panel]Maven : 'User Settings' -> [in right-panel] click 'Browse' : and choose '~\apache-maven-3.5.3\conf\settings.xml' and click : 'Apply and close'
+
+Importing Maven Project
+=======================
+  - Right click inside 'Package Explorer' -> 'Import..' -> 'Maven' -> 'Existing Maven Projects'
