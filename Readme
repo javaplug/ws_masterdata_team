@@ -26,6 +26,7 @@ Tools required
    - https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop/related?hl=en
    - click : 'Add to chrome' -> click : 'Add app'
    - creating shortcuts -> 'chrome://apps/' -> right click on 'Postman' -> 'Create shortcuts..'
+   - open postman, if you want to take backup of your data, you can sign-in otherwise click 'Take me straight to the app..'
 
 Configuration
 =============
@@ -59,4 +60,4 @@ Importing Maven Project and starting
       Tomcat started on port(s): 8080 (http) with context path ''
       Started MasterdataTeamApplication in 20.906 seconds (JVM running for 28.587)
   - make a note of the port 8080
-
+  - open postman and give input as per 
