@@ -60,8 +60,8 @@ Importing Maven Project and starting
       Tomcat started on port(s): 8080 (http) with context path ''
       Started MasterdataTeamApplication in 20.906 seconds (JVM running for 28.587)
   - make a note of the port 8080, it might change use accordingly
-  - open postman and give input as per 'postmanrequest.PNG' in the same page -> scroll-up and click 'Send'
-  - you can see the success message in the same window as highlighted in red 'postmanrequest.PNG'
-  - in browser open 'http://localhost:8080/h2-console' and give input as per 'h2console.PNG' and click 'connect'
+  - open postman and give input as per 'tutorials/postmanrequest.PNG' in the same page -> scroll-up and click 'Send'
+  - you can see the success message in the same window as highlighted in red 'tutorials/postmanrequest.PNG'
+  - in browser open 'http://localhost:8080/h2-console' and give input as per 'tutorials/h2console.PNG' and click 'connect'
   - this is a console of embedded db configured in the ws_masterdata_team
-  - sample usage refer 'output.PNG'
+  - sample usage refer 'tutorials/output.PNG'
