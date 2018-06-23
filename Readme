@@ -1,9 +1,8 @@
-Spring Boot
-===========
+Spring Boot [Framework for developing web application]
+======================================================
 opinionated     - comes with a lot of non-functional features, quick development
 configuration   - can be overriden any of the opinionated features
 Embedded-server - gives stand-alone jar/war with embedded Tomcat server
---------------------------------------------------------------------------------------------------------------------------------------
 
 Getting Started
 ===============
