@@ -12,11 +12,8 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
-import lombok.Data;
-
 @Entity
 @Table(name = "TEAM_MEMBER")
-@Data
 public class TeamMember implements Serializable {
 
     private static final long serialVersionUID = -4396567303660725509L;
@@ -41,5 +38,53 @@ public class TeamMember implements Serializable {
     @ManyToOne
     @JoinColumn(name = "teamId")
     private Team team;
+
+    public Integer getEmpId() {
+        return empId;
+    }
+
+    public void setEmpId(Integer empId) {
+        this.empId = empId;
+    }
+
+    public Boolean getBillable() {
+        return billable;
+    }
+
+    public void setBillable(Boolean billable) {
+        this.billable = billable;
+    }
+
+    public OffsetDateTime getDateOfJoining() {
+        return dateOfJoining;
+    }
+
+    public void setDateOfJoining(OffsetDateTime dateOfJoining) {
+        this.dateOfJoining = dateOfJoining;
+    }
+
+    public String getRole() {
+        return role;
+    }
+
+    public void setRole(String role) {
+        this.role = role;
+    }
+
+    public String getString() {
+        return String;
+    }
+
+    public void setString(String string) {
+        String = string;
+    }
+
+    public Team getTeam() {
+        return team;
+    }
+
+    public void setTeam(Team team) {
+        this.team = team;
+    }
 
 }

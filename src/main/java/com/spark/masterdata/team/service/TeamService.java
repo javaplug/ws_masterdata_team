@@ -5,7 +5,6 @@ import java.util.List;
 import javax.transaction.Transactional;
 
 import org.apache.commons.lang3.math.NumberUtils;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.spark.masterdata.team.dto.TeamDTO;
@@ -16,11 +15,13 @@ import com.spark.masterdata.team.service.helper.TeamServiceHelper;
 @Service
 public class TeamService {
 
-    @Autowired
-    private TeamRepository teamRepository;
-
-    @Autowired
-    private TeamServiceHelper teamServiceHelper;
+    private final TeamRepository teamRepository;
+    private final TeamServiceHelper teamServiceHelper;
+    
+    public TeamService(TeamRepository teamRepository, TeamServiceHelper teamServiceHelper) {
+        this.teamRepository = teamRepository;
+        this.teamServiceHelper = teamServiceHelper;
+    }
 
     public List<TeamDTO> retrieveAllTeams() {
         return teamServiceHelper.convert((List<Team>) teamRepository.findAll());
